@@ -466,11 +466,17 @@ class MainActivity : AppCompatActivity(), SharedPreferences.OnSharedPreferenceCh
     private fun setShortcutListeners(textView: TextView, savedView: List<String>?) {
         textView.setOnClickListener {
             if (savedView != null && canLaunchShortcut) {
+                val userHandle = launcherApps.profiles[savedView[1].toInt()]
                 val componentName = if (savedView[0].contains("/")) {
                     val (packageName, className) = savedView[0].split("/")
-                    ComponentName(packageName, className)
+                    val cn = ComponentName(packageName, className)
+                    if (launcherApps.getActivityList(packageName, userHandle).none { it.componentName == cn }) {
+                        logger.w("MainActivity", "Failed to launch shortcut: ${savedView[0]} not found")
+                        Toast.makeText(this, this.getString(R.string.launch_error), Toast.LENGTH_SHORT).show()
+                        return@setOnClickListener
+                    }
+                    cn
                 } else {
-                    val userHandle = launcherApps.profiles[savedView[1].toInt()]
                     val mainActivity = launcherApps.getActivityList(savedView[0], userHandle).firstOrNull()
                     if (mainActivity != null) {
                         mainActivity.componentName
@@ -480,7 +486,7 @@ class MainActivity : AppCompatActivity(), SharedPreferences.OnSharedPreferenceCh
                         return@setOnClickListener
                     }
                 }
-                appUtils.launchApp(componentName, launcherApps.profiles[savedView[1].toInt()])
+                appUtils.launchApp(componentName, userHandle)
             }
         }
     }
