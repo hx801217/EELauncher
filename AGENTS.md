@@ -69,10 +69,6 @@ Note: The project currently has no test files. Tests should be placed in:
 
 ## Code Style Guidelines
 
-### No Comments
-
-Do NOT add any comments in code unless explicitly requested by the user.
-
 ### Import Order
 
 Organize imports in this order:
