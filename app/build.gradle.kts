@@ -37,7 +37,6 @@ android {
                 "proguard-rules.pro"
             )
             resValue("string", "app_name", "YAM Launcher")
-            signingConfig = signingConfigs.getByName("debug")
         }
     }
     compileOptions {
