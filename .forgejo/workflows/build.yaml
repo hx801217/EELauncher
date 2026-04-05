@@ -19,6 +19,12 @@ jobs:
           distribution: "temurin"
           java-version: "17"
 
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Accept Android licenses
+        run: yes | sdkmanager --licenses 2>/dev/null || true
+
       - name: Cache Gradle
         uses: actions/cache@v4
         with:
@@ -28,6 +34,12 @@ jobs:
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
           restore-keys: |
             ${{ runner.os }}-gradle-
+
+      - name: Cache Android SDK
+        uses: actions/cache@v4
+        with:
+          path: ~/android-sdk
+          key: ${{ runner.os }}-android-sdk-36
 
       - name: Build debug APK
         run: ./gradlew assembleDebug
