@@ -24,15 +24,13 @@ class UISettingsFragment : PreferenceFragmentCompat(), TitleProvider {
     private lateinit var openFontFileLauncher: ActivityResultLauncher<Intent>
     private var customFontPreference: Preference? = null
 
-    override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
-        setPreferencesFromResource(R.xml.ui_preferences, rootKey)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
         sharedPreferenceManager = SharedPreferenceManager(requireContext())
         logger = Logger.getInstance(requireContext())
 
-        customFontPreference = findPreference("customFontFile")
-
-        // Register file picker launcher
+        // Register file picker launcher in onCreate (required for ActivityResultLauncher)
         openFontFileLauncher = registerForActivityResult(
             ActivityResultContracts.StartActivityForResult()
         ) { result ->
@@ -42,6 +40,12 @@ class UISettingsFragment : PreferenceFragmentCompat(), TitleProvider {
                 }
             }
         }
+    }
+
+    override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
+        setPreferencesFromResource(R.xml.ui_preferences, rootKey)
+
+        customFontPreference = findPreference("customFontFile")
 
         // Set up custom font file picker
         customFontPreference?.setOnPreferenceClickListener {

@@ -74,9 +74,16 @@ class SpinnerPreference (context: Context, attrs: AttributeSet? = null): Prefere
             }
         }, 0)
 
+        // Track whether this is the initial selection to avoid spurious callbacks
+        var isInitialSelection = true
+
         // Handle selection changes
         spinner?.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
+                if (isInitialSelection) {
+                    isInitialSelection = false
+                    return
+                }
                 val newValue = entryValues?.get(position).toString()
                 if (callChangeListener(newValue)) {
                     currentValue = newValue
