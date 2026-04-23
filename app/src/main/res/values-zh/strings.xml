@@ -69,6 +69,11 @@
     <string name="background_color">背景颜色</string>
     <string name="text_color">文字颜色</string>
     <string name="text_font">文字字体</string>
+    <string name="custom_font">自定义字体</string>
+    <string name="custom_font_not_set">未选择自定义字体</string>
+    <string name="custom_font_select">选择字体文件</string>
+    <string name="custom_font_summary">点击从本地存储选择 .ttf 或 .otf 字体文件</string>
+    <string name="custom_font_error">加载自定义字体失败</string>
     <string name="text_style">文字样式</string>
     <string name="text_shadow">文字阴影</string>
 

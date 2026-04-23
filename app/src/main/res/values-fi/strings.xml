@@ -73,6 +73,11 @@
     <string name="background_color">Taustaväri</string>
     <string name="text_color">Tekstin Väri</string>
     <string name="text_font">Tekstin Fontti</string>
+    <string name="custom_font">Mukautettu fontti</string>
+    <string name="custom_font_not_set">Mukautettua fonttia ei valittu</string>
+    <string name="custom_font_select">Valitse fonttitiedosto</string>
+    <string name="custom_font_summary">Napauta valitaksesi .ttf- tai .otf-tiedoston tallennustilasta</string>
+    <string name="custom_font_error">Mukautetun fontin lataus epäonnistui</string>
     <string name="text_style">Textin Tyyli</string>
 
     <string name="eink_mode">E-Ink-tila</string>

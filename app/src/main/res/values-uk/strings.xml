@@ -76,6 +76,11 @@
     <string name="background_color">Колір фону</string>
     <string name="text_color">Колір тексту</string>
     <string name="text_font">Шрифт тексту</string>
+    <string name="custom_font">Користувацький шрифт</string>
+    <string name="custom_font_not_set">Користувацький шрифт не вибрано</string>
+    <string name="custom_font_select">Вибрати файл шрифту</string>
+    <string name="custom_font_summary">Натисніть, щоб вибрати файл .ttf або .otf зі сховища</string>
+    <string name="custom_font_error">Не вдалося завантажити користувацький шрифт</string>
     <string name="text_style">Стиль тексту</string>
     <string name="text_shadow">Тінь тексту</string>
 

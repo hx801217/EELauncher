@@ -74,6 +74,11 @@
     <string name="background_color">Achtergrondkleur</string>
     <string name="text_color">Tekstkleur</string>
     <string name="text_font">Tekstlettertype</string>
+    <string name="custom_font">Aangepast lettertype</string>
+    <string name="custom_font_not_set">Geen aangepast lettertype geselecteerd</string>
+    <string name="custom_font_select">Lettertypebestand selecteren</string>
+    <string name="custom_font_summary">Tik om een .ttf- of .otf-bestand uit de opslag te kiezen</string>
+    <string name="custom_font_error">Aangepast lettertype laden mislukt</string>
     <string name="text_style">Tekststijl</string>
     <string name="text_shadow">Tekstschaduw</string>
 

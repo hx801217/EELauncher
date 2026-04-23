@@ -78,6 +78,11 @@
     <string name="background_color">Colore dello sfondo</string>
     <string name="text_color">Colore del testo</string>
     <string name="text_font">Carattere del testo</string>
+    <string name="custom_font">Carattere personalizzato</string>
+    <string name="custom_font_not_set">Nessun carattere personalizzato selezionato</string>
+    <string name="custom_font_select">Seleziona file carattere</string>
+    <string name="custom_font_summary">Tocca per selezionare un file .ttf o .otf dalla memoria</string>
+    <string name="custom_font_error">Impossibile caricare il carattere personalizzato</string>
     <string name="text_style">Stile del testo</string>
 
     <string name="text_shadow">Ombra del testo</string>

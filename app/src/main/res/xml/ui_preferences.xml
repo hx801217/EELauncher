@@ -34,6 +34,14 @@
             app:title="@string/text_font"
             app:useSimpleSummaryProvider="true" />
 
+        <Preference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:key="customFontFile"
+            app:selectable="true"
+            app:title="@string/custom_font_select"
+            app:summary="@string/custom_font_summary" />
+
         <eu.ottop.yamlauncher.settings.SpinnerPreference
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

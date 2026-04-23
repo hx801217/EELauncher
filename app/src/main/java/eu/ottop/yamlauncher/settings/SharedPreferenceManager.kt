@@ -110,6 +110,23 @@ class SharedPreferenceManager(private val context: Context) {
     }
 
     /**
+     * Gets custom font file path.
+     * Returns the path to the custom font file in app private storage, or null if not set.
+     */
+    fun getCustomFontPath(): String? {
+        return preferences.getString("customFontPath", null)
+    }
+
+    /**
+     * Sets custom font file path.
+     */
+    fun setCustomFontPath(path: String?) {
+        preferences.edit {
+            if (path != null) putString("customFontPath", path) else remove("customFontPath")
+        }
+    }
+
+    /**
      * Gets text style (normal, bold, italic, bold-italic).
      */
     fun getTextStyle(): String? {

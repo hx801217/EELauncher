@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Yam Launcher"
+rootProject.name = "EELauncher"
 include(":app")

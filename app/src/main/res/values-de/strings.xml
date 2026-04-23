@@ -77,6 +77,11 @@
     <string name="background_color">Hintergrundfarbe</string>
     <string name="text_color">Textfarbe</string>
     <string name="text_font">Schriftart</string>
+    <string name="custom_font">Benutzerdefinierte Schriftart</string>
+    <string name="custom_font_not_set">Keine benutzerdefinierte Schriftart ausgewählt</string>
+    <string name="custom_font_select">Schriftartdatei auswählen</string>
+    <string name="custom_font_summary">Tippen, um eine .ttf- oder .otf-Datei aus dem Speicher auszuwählen</string>
+    <string name="custom_font_error">Benutzerdefinierte Schriftart konnte nicht geladen werden</string>
     <string name="text_style">Stil</string>
 
     <string name="eink_mode">E-Ink-Modus</string>

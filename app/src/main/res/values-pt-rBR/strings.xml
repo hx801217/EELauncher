@@ -77,6 +77,11 @@
     <string name="background_color">Cor de fundo</string>
     <string name="text_color">Cor do texto</string>
     <string name="text_font">Fonte do texto</string>
+    <string name="custom_font">Fonte personalizada</string>
+    <string name="custom_font_not_set">Nenhuma fonte personalizada selecionada</string>
+    <string name="custom_font_select">Selecionar arquivo de fonte</string>
+    <string name="custom_font_summary">Toque para selecionar um arquivo .ttf ou .otf do armazenamento</string>
+    <string name="custom_font_error">Falha ao carregar a fonte personalizada</string>
     <string name="text_style">Estilo do texto</string>
     <string name="text_shadow">Sombra do texto</string>
 

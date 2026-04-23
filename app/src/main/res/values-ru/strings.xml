@@ -76,6 +76,11 @@
     <string name="background_color">Цвет фона</string>
     <string name="text_color">Цвет текста</string>
     <string name="text_font">Шрифт текста</string>
+    <string name="custom_font">Пользовательский шрифт</string>
+    <string name="custom_font_not_set">Пользовательский шрифт не выбран</string>
+    <string name="custom_font_select">Выбрать файл шрифта</string>
+    <string name="custom_font_summary">Нажмите, чтобы выбрать файл .ttf или .otf из хранилища</string>
+    <string name="custom_font_error">Не удалось загрузить пользовательский шрифт</string>
     <string name="text_style">Стиль текста</string>
     <string name="text_shadow">Тень текста</string>
 

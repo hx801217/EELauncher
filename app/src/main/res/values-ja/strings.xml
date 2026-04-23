@@ -73,6 +73,11 @@
     <string name="background_color">背景色</string>
     <string name="text_color">文字色</string>
     <string name="text_font">フォント</string>
+    <string name="custom_font">カスタムフォント</string>
+    <string name="custom_font_not_set">カスタムフォント未選択</string>
+    <string name="custom_font_select">フォントファイルを選択</string>
+    <string name="custom_font_summary">タップしてストレージから.ttfまたは.otfファイルを選択</string>
+    <string name="custom_font_error">カスタムフォントの読み込みに失敗しました</string>
     <string name="text_style">文字スタイル</string>
     <string name="text_shadow">文字の影</string>
 

@@ -848,7 +848,7 @@ class MainActivity : AppCompatActivity(), SharedPreferences.OnSharedPreferenceCh
                 contactAdapter?.onPreferencesChanged()
             }
 
-            "textFont", "textStyle" -> {
+            "textFont", "textStyle", "customFontPath" -> {
                 val typeface = uiUtils.resolveTypeface()
                 uiUtils.setTextFont(binding.homeView, typeface)
                 uiUtils.setFont(searchView, typeface)

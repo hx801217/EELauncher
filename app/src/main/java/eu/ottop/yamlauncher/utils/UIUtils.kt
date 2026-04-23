@@ -71,6 +71,18 @@ class UIUtils(private val context: Context) {
             "serif" -> Typeface.SERIF
             "sans-serif-light", "sans-serif-thin", "sans-serif-condensed", "sans-serif-condensed-light", "sans-serif-smallcaps" ->
                 Typeface.create(font, Typeface.NORMAL)
+            "custom" -> {
+                val customPath = sharedPreferenceManager.getCustomFontPath()
+                if (customPath != null) {
+                    try {
+                        Typeface.createFromFile(customPath)
+                    } catch (e: Exception) {
+                        Typeface.DEFAULT
+                    }
+                } else {
+                    Typeface.DEFAULT
+                }
+            }
             else -> {
                 val fontId = FontMap.fonts[font]
                 if (fontId != null) ResourcesCompat.getFont(context, fontId) else Typeface.DEFAULT

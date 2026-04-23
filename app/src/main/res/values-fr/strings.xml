@@ -78,6 +78,11 @@
     <string name="background_color">Couleur de fond</string>
     <string name="text_color">Couleur du texte</string>
     <string name="text_font">Police du texte</string>
+    <string name="custom_font">Police personnalisée</string>
+    <string name="custom_font_not_set">Aucune police personnalisée sélectionnée</string>
+    <string name="custom_font_select">Sélectionner un fichier de police</string>
+    <string name="custom_font_summary">Appuyez pour sélectionner un fichier .ttf ou .otf depuis le stockage</string>
+    <string name="custom_font_error">Échec du chargement de la police personnalisée</string>
     <string name="text_style">Style du texte</string>
     <string name="text_shadow">Ombre du texte</string>
 
