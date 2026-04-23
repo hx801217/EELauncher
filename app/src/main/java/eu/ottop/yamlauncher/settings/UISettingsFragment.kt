@@ -47,15 +47,14 @@ class UISettingsFragment : PreferenceFragmentCompat(), TitleProvider {
 
         customFontPreference = findPreference("customFontFile")
 
+        // Hide by default; onResume() will set correct visibility after sharedPreferenceManager is ready
+        customFontPreference?.isVisible = false
+
         // Set up custom font file picker
         customFontPreference?.setOnPreferenceClickListener {
             openFontFileChooser()
             true
         }
-
-        // Update custom font preference visibility based on current font selection
-        updateCustomFontVisibility()
-        updateCustomFontSummary()
 
         // Listen for font preference changes to toggle custom font visibility
         findPreference<Preference>("textFont")?.setOnPreferenceChangeListener { _, newValue ->
