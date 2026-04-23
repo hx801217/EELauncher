@@ -93,9 +93,11 @@ class UISettingsFragment : PreferenceFragmentCompat(), TitleProvider {
 
     /**
      * Opens the system file picker for .ttf and .otf files.
+     * Uses ACTION_OPEN_DOCUMENT on devices that support it,
+     * falls back to ACTION_GET_CONTENT for Android Go compatibility.
      */
     private fun openFontFileChooser() {
-        val intent = Intent(Intent.ACTION_OPEN_DOCUMENT).apply {
+        val openDocIntent = Intent(Intent.ACTION_OPEN_DOCUMENT).apply {
             addCategory(Intent.CATEGORY_OPENABLE)
             type = "*/*"
             putExtra(Intent.EXTRA_MIME_TYPES, arrayOf(
@@ -106,6 +108,16 @@ class UISettingsFragment : PreferenceFragmentCompat(), TitleProvider {
                 "application/octet-stream"
             ))
         }
+
+        // Use ACTION_GET_CONTENT as fallback for Android Go and other lightweight devices
+        val intent = if (openDocIntent.resolveActivity(requireContext().packageManager) != null) {
+            openDocIntent
+        } else {
+            Intent(Intent.ACTION_GET_CONTENT).apply {
+                type = "*/*"
+            }
+        }
+
         try {
             openFontFileLauncher.launch(intent)
         } catch (e: Exception) {
