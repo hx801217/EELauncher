@@ -228,17 +228,7 @@
     <string name="about_title">About EELauncher</string>
     <string name="app_icon">App Icon</string>
     <string
-        name="creditName"
-    >created by Otto, maintained by Thomas Boom</string>
-    <string name="source_code">Source Code</string>
-    <string name="codeberg">Codeberg</string>
-    <string name="github">GitHub</string>
-    <string name="view_github">View this project on GitHub</string>
-    <string name="install_fdroid">Install on F-Droid</string>
-    <string name="install_izzy">Install on IzzyOnDroid</string>
-    <string name="install_play">Install on Google Play</string>
-    <string name="donate">Support Development</string>
-    <string name="ko_fi_link">https://liberapay.com/thomasboom</string>
+        name="creditName">Made by hx801217, EEGO First Release Celebration Edition</string>
 
     <string name="reset">Reset</string>
     <string name="restart_text">Restart EELauncher</string>
