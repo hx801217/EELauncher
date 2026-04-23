@@ -1,8 +1,8 @@
-<resources>
+﻿<resources>
     <!--Home Screen-->
     <string
         name="set_default_launcher_prompt"
-    >YAM Launcher не установлен как домашнее приложение по умолчанию.</string>
+    >EELauncher не установлен как домашнее приложение по умолчанию.</string>
     <string name="set_default_launcher_button">Установить по умолчанию</string>
     <string
         name="shortcut_default"
@@ -78,6 +78,9 @@
     <string name="text_font">Шрифт текста</string>
     <string name="text_style">Стиль текста</string>
     <string name="text_shadow">Тень текста</string>
+
+    <string name="eink_mode">Режим E-Ink</string>
+    <string name="eink_mode_summary">Оптимизация для электронных чернил: высококонтрастная чёрно-белая тема, анимации отключены</string>
 
     <string name="operation">Операции</string>
     <string name="animation_speed">Скорость анимации</string>
@@ -202,7 +205,7 @@
 
     <string name="about">О приложении</string>
     <!--About Page Items-->
-    <string name="about_title">О YAM Launcher</string>
+    <string name="about_title">О EELauncher</string>
     <string name="app_icon">Значок приложения</string>
     <string name="creditName">создано Отто, поддерживается Thomas Boom</string>
     <string name="source_code">Исходный код</string>
@@ -214,7 +217,7 @@
     <string name="install_play">Установить из Google Play</string>
 
     <string name="reset">Сбросить</string>
-    <string name="restart_text">Перезапустить YAM Launcher</string>
+    <string name="restart_text">Перезапустить EELauncher</string>
     <string name="reset_text">Сбросить все настройки</string>
     <string
         name="reset_confirm_text"
@@ -237,7 +240,7 @@
     >Ошибка восстановления :( (поврежденный файл?)</string>
     <string
         name="restore_wrong_app"
-    >Это не резервная копия YAM Launcher</string>
+    >Это не резервная копия EELauncher</string>
     <string name="restore_error">Не удалось прочитать файл</string>
 
     <!--Logging-->
@@ -261,10 +264,10 @@
     <!--Double tap to lock-->
     <string
         name="screenlock_confirmation"
-    >Чтобы блокировать двойным нажатием, включите YAM Launcher в настройках специальных возможностей.</string>
+    >Чтобы блокировать двойным нажатием, включите EELauncher в настройках специальных возможностей.</string>
     <string
         name="accessibility_service_description"
-    >Разрешение требуется для работы двойного нажатия для блокировки экрана.\n\nОно нужно только в том случае, если вы хотите использовать функцию двойного нажатия для блокировки экрана в YAM Launcher.</string>
+    >Разрешение требуется для работы двойного нажатия для блокировки экрана.\n\nОно нужно только в том случае, если вы хотите использовать функцию двойного нажатия для блокировки экрана в EELauncher.</string>
 
     <string name="text_authentication_cancel">Аутентификация отменена.</string>
     <string
@@ -273,7 +276,7 @@
     <string name="text_authentication_failed">Ошибка аутентификации.</string>
     <string
         name="text_biometric_login"
-    >Разблокировать настройки YAM Launcher</string>
+    >Разблокировать настройки EELauncher</string>
     <string
         name="text_biometric_login_app"
     >Биометрический вход для %1$s</string>

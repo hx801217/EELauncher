@@ -1,8 +1,8 @@
-<resources>
+﻿<resources>
     <!--Home Screen-->
     <string
         name="set_default_launcher_prompt"
-    >YAM Launcher n\'est pas défini comme application d\'accueil par défaut.</string>
+    >EELauncher n\'est pas défini comme application d\'accueil par défaut.</string>
     <string name="set_default_launcher_button">Définir par défaut</string>
     <string
         name="shortcut_default"
@@ -80,6 +80,9 @@
     <string name="text_font">Police du texte</string>
     <string name="text_style">Style du texte</string>
     <string name="text_shadow">Ombre du texte</string>
+
+    <string name="eink_mode">Mode E-Ink</string>
+    <string name="eink_mode_summary">Optimisé pour les écrans e-ink : thème noir et blanc à contraste élevé, animations désactivées</string>
 
     <string name="operation">Opération</string>
     <string name="animation_speed">Vitesse d\'animation</string>
@@ -220,7 +223,7 @@
 
     <string name="about">À propos</string>
     <!--About Page Items-->
-    <string name="about_title">À propos de YAM Launcher</string>
+    <string name="about_title">À propos de EELauncher</string>
     <string name="app_icon">Icône de l\'application</string>
     <string name="creditName">créé par Otto, maintenu par Thomas Boom</string>
     <string name="source_code">Code source</string>
@@ -232,7 +235,7 @@
     <string name="install_play">Installer sur Google Play</string>
 
     <string name="reset">Réinitialiser</string>
-    <string name="restart_text">Redémarrer YAM Launcher</string>
+    <string name="restart_text">Redémarrer EELauncher</string>
     <string name="reset_text">Réinitialiser tous les paramètres</string>
     <string
         name="reset_confirm_text"
@@ -251,7 +254,7 @@
     >Échec de la restauration : (fichier corrompu ?)</string>
     <string
         name="restore_wrong_app"
-    >Ce n\'est pas une sauvegarde de YAM Launcher</string>
+    >Ce n\'est pas une sauvegarde de EELauncher</string>
     <string name="restore_error">Échec de la lecture du fichier</string>
 
     <!--Logging-->
@@ -277,10 +280,10 @@
     <!--Double tap to lock-->
     <string
         name="screenlock_confirmation"
-    >Pour verrouiller avec un double tapotement, activez YAM Launcher dans les paramètres d\'accessibilité.</string>
+    >Pour verrouiller avec un double tapotement, activez EELauncher dans les paramètres d\'accessibilité.</string>
     <string
         name="accessibility_service_description"
-    >L\'autorisation est requise pour que le double tapotement fonctionne pour verrouiller l\'écran.\n\nElle n\'est nécessaire que si vous souhaitez utiliser la fonctionnalité de double tapotement pour verrouiller l\'écran dans YAM Launcher.</string>
+    >L\'autorisation est requise pour que le double tapotement fonctionne pour verrouiller l\'écran.\n\nElle n\'est nécessaire que si vous souhaitez utiliser la fonctionnalité de double tapotement pour verrouiller l\'écran dans EELauncher.</string>
 
     <string name="text_authentication_cancel">Authentification annulée.</string>
     <string
@@ -291,7 +294,7 @@
     >Échec de l\'authentification.</string>
     <string
         name="text_biometric_login"
-    >Déverrouiller les paramètres de YAM Launcher</string>
+    >Déverrouiller les paramètres de EELauncher</string>
     <string
         name="text_biometric_login_app"
     >Connexion biométrique pour %1$s</string>

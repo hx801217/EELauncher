@@ -1,8 +1,8 @@
-<resources>
+﻿<resources>
     <!--Home Screen-->
     <string
         name="set_default_launcher_prompt"
-    >YAM Launcher はデフォルトのホームアプリに設定されていません。</string>
+    >EELauncher はデフォルトのホームアプリに設定されていません。</string>
     <string name="set_default_launcher_button">デフォルトに設定</string>
     <string name="shortcut_default">長押ししてアプリを追加</string>
 
@@ -75,6 +75,9 @@
     <string name="text_font">フォント</string>
     <string name="text_style">文字スタイル</string>
     <string name="text_shadow">文字の影</string>
+
+    <string name="eink_mode">E-Inkモード</string>
+    <string name="eink_mode_summary">電子インクディスプレイ向け最適化：ハイコントラスト白黒テーマ、アニメーション無効</string>
 
     <string name="operation">操作</string>
     <string name="animation_speed">アニメーション速度</string>
@@ -209,7 +212,7 @@
 
     <string name="about">このアプリについて</string>
     <!--About Page Items-->
-    <string name="about_title">YAM Launcher について</string>
+    <string name="about_title">EELauncher について</string>
     <string name="app_icon">アプリアイコン</string>
     <string
         name="creditName"
@@ -223,7 +226,7 @@
     <string name="install_play">Google Play でインストール</string>
 
     <string name="reset">リセット</string>
-    <string name="restart_text">YAM Launcher を再起動</string>
+    <string name="restart_text">EELauncher を再起動</string>
     <string name="reset_text">すべての設定をリセット</string>
     <string
         name="reset_confirm_text"
@@ -242,7 +245,7 @@
     >復元に失敗しました :(（ファイルが破損している可能性があります）</string>
     <string
         name="restore_wrong_app"
-    >YAM Launcher のバックアップではありません</string>
+    >EELauncher のバックアップではありません</string>
     <string name="restore_error">ファイルの読み込みに失敗しました</string>
 
     <!--Logging-->
@@ -266,10 +269,10 @@
     <!--Double tap to lock-->
     <string
         name="screenlock_confirmation"
-    >ダブルタップで画面をロックするには、アクセシビリティ設定で YAM Launcher を有効にしてください。</string>
+    >ダブルタップで画面をロックするには、アクセシビリティ設定で EELauncher を有効にしてください。</string>
     <string
         name="accessibility_service_description"
-    >ダブルタップで画面をロックできるようにするには、この権限が必要です。\n\nこの権限は、YAM Launcher の「ダブルタップで画面をロック」機能を使う場合にのみ必要です。</string>
+    >ダブルタップで画面をロックできるようにするには、この権限が必要です。\n\nこの権限は、EELauncher の「ダブルタップで画面をロック」機能を使う場合にのみ必要です。</string>
 
     <string
         name="text_authentication_cancel"
@@ -278,7 +281,7 @@
         name="text_authentication_error"
     >認証エラー: %1$s (code %2$d)</string>
     <string name="text_authentication_failed">認証に失敗しました。</string>
-    <string name="text_biometric_login">YAM Launcher の設定をロック解除</string>
+    <string name="text_biometric_login">EELauncher の設定をロック解除</string>
     <string name="text_biometric_login_app">%1$s の生体認証ログイン</string>
     <string
         name="text_biometric_login_sub"

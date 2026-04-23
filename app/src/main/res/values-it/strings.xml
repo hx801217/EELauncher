@@ -1,10 +1,10 @@
-<resources>
+﻿<resources>
     <string name="empty" />
 
     <!--Home Screen-->
     <string
         name="set_default_launcher_prompt"
-    >YAM Launcher non è impostato come app home predefinita.</string>
+    >EELauncher non è impostato come app home predefinita.</string>
     <string name="set_default_launcher_button">Imposta come predefinito</string>
     <string
         name="shortcut_default"
@@ -81,6 +81,9 @@
     <string name="text_style">Stile del testo</string>
 
     <string name="text_shadow">Ombra del testo</string>
+
+    <string name="eink_mode">Modalità E-Ink</string>
+    <string name="eink_mode_summary">Ottimizzato per schermi e-ink: tema bianco e nero ad alto contrasto, animazioni disattivate</string>
     <string name="operation">Operazioni</string>
     <string name="animation_speed">Velocità animazione</string>
     <string name="swipe_threshold">Soglia swipe</string>
@@ -210,7 +213,7 @@
 
     <string name="about">Info</string>
     <!--About Page Items-->
-    <string name="about_title">Informazioni su YAM Launcher</string>
+    <string name="about_title">Informazioni su EELauncher</string>
     <string name="app_icon">Icona app</string>
     <string name="creditName">Creato da Otto, mantenuto da Thomas Boom</string>
     <string name="source_code">Codice sorgente</string>
@@ -239,7 +242,7 @@
     ><![CDATA[Dati meteo da <a href="https://open-meteo.com/">Open-Meteo.com</a><br>(<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>)]]></string>
 
     <string name="reset">Ripristina</string>
-    <string name="restart_text">Riavvia YAM Launcher</string>
+    <string name="restart_text">Riavvia EELauncher</string>
     <string name="reset_text">Ripristina tutte le impostazioni</string>
     <string
         name="reset_confirm_text"
@@ -258,7 +261,7 @@
     <string
         name="restore_fail"
     >Ripristino fallito :( (file danneggiato?)</string>
-    <string name="restore_wrong_app">Non è un backup di YAM Launcher</string>
+    <string name="restore_wrong_app">Non è un backup di EELauncher</string>
     <string name="restore_error">Impossibile leggere il file</string>
 
     <!--Logging-->
@@ -285,10 +288,10 @@
     <!--Double tap to lock-->
     <string
         name="screenlock_confirmation"
-    >Per bloccare con doppio tap, abilita YAM Launcher nelle impostazioni di accessibilità.</string>
+    >Per bloccare con doppio tap, abilita EELauncher nelle impostazioni di accessibilità.</string>
     <string
         name="accessibility_service_description"
-    >Il permesso è necessario per il doppio tap per bloccare lo schermo.\n\nÈ necessario solo se vuoi usare la funzione di blocco schermo con doppio tap in YAM Launcher.</string>
+    >Il permesso è necessario per il doppio tap per bloccare lo schermo.\n\nÈ necessario solo se vuoi usare la funzione di blocco schermo con doppio tap in EELauncher.</string>
     <string name="text_authentication_cancel">Autenticazione annullata.</string>
     <string
         name="text_authentication_error"
@@ -296,7 +299,7 @@
     <string name="text_authentication_failed">Autenticazione fallita.</string>
     <string
         name="text_biometric_login"
-    >Sblocca Impostazioni YAM Launcher</string>
+    >Sblocca Impostazioni EELauncher</string>
     <string name="text_biometric_login_app">Accesso biometrico per %1$s</string>
     <string
         name="text_biometric_login_sub"
