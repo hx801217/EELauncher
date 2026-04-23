@@ -1,8 +1,8 @@
-<resources>
+﻿<resources>
     <!--Home Screen-->
     <string
         name="set_default_launcher_prompt"
-    >YAM Launcher is not set as your default home app.</string>
+    >EELauncher is not set as your default home app.</string>
     <string name="set_default_launcher_button">Set as Default</string>
     <string name="shortcut_default">Long press to add an app</string>
 
@@ -71,6 +71,9 @@
     <string name="text_font">Text Font</string>
     <string name="text_style">Text Style</string>
     <string name="text_shadow">Text Shadow</string>
+
+    <string name="eink_mode">E-Ink Mode</string>
+    <string name="eink_mode_summary">Optimize for e-ink displays: high contrast black/white theme, disable animations</string>
 
     <string name="operation">Operation</string>
     <string name="block_auto_rotation">Block Auto Rotation</string>
@@ -214,7 +217,7 @@
 
     <string name="about">About</string>
     <!--About Page Items-->
-    <string name="about_title">About YAM Launcher</string>
+    <string name="about_title">About EELauncher</string>
     <string name="app_icon">App Icon</string>
     <string
         name="creditName"
@@ -230,7 +233,7 @@
     <string name="ko_fi_link">https://liberapay.com/thomasboom</string>
 
     <string name="reset">Reset</string>
-    <string name="restart_text">Restart YAM Launcher</string>
+    <string name="restart_text">Restart EELauncher</string>
     <string name="reset_text">Reset All Settings</string>
     <string
         name="reset_confirm_text"
@@ -245,7 +248,7 @@
     <string name="backup_fail">Backup failed :(</string>
     <string name="restore_success">Restore successful :)</string>
     <string name="restore_fail">Restore failed :( (corrupt file?)</string>
-    <string name="restore_wrong_app">Not a YAM Launcher backup</string>
+    <string name="restore_wrong_app">Not a EELauncher backup</string>
     <string name="restore_error">Failed to read file</string>
 
     <!--Logging-->
@@ -267,17 +270,17 @@
     <!--Double tap to lock-->
     <string
         name="screenlock_confirmation"
-    >To lock with double tap, enable YAM Launcher in accessibility settings.</string>
+    >To lock with double tap, enable EELauncher in accessibility settings.</string>
     <string
         name="accessibility_service_description"
-    >The permission is required for double tap to work for locking the screen.\n\nIt is only needed if you want to use the double tap to lock screen feature in YAM Launcher.</string>
+    >The permission is required for double tap to work for locking the screen.\n\nIt is only needed if you want to use the double tap to lock screen feature in EELauncher.</string>
 
     <string name="text_authentication_cancel">Authentication Cancel.</string>
     <string
         name="text_authentication_error"
     >Authentication error: %1$s (code %2$d)</string>
     <string name="text_authentication_failed">Authentication failed.</string>
-    <string name="text_biometric_login">Unlock YAM Launcher Settings</string>
+    <string name="text_biometric_login">Unlock EELauncher Settings</string>
     <string name="text_biometric_login_app">Biometric login for %1$s</string>
     <string
         name="text_biometric_login_sub"

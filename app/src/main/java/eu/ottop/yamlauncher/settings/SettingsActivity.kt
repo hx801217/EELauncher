@@ -430,7 +430,7 @@ class SettingsActivity : AppCompatActivity(), SharedPreferences.OnSharedPreferen
 
     override fun onSharedPreferenceChanged(preferences: SharedPreferences?, key: String?) {
         // Update background color or darkening setting when changed
-        if (key == "bgColor" || key == "settingsDarkening") {
+        if (key == "bgColor" || key == "settingsDarkening" || key == "einkMode") {
             val uiUtils = UIUtils(this@SettingsActivity)
             uiUtils.setBackground(window, true)
         }

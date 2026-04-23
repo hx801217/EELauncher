@@ -3,6 +3,13 @@ plugins {
     id("org.jetbrains.kotlin.android")
 }
 
+// 加载签名配置（来自 GitHub Actions 或本地 keystore.properties）
+val keystoreProperties = java.util.Properties()
+val keystoreFile = rootProject.file("keystore.properties")
+if (keystoreFile.exists()) {
+    keystoreProperties.load(keystoreFile.inputStream())
+}
+
 android {
     namespace = "eu.ottop.yamlauncher"
     compileSdk = 36
@@ -27,14 +34,31 @@ android {
         abortOnError = false
     }
 
+    signingConfigs {
+        create("release") {
+            val keyLoaded = keystoreProperties["signing.key.loaded"]?.toString()?.toBoolean() ?: false
+            if (keyLoaded) {
+                storeFile = file(keystoreProperties["storeFile"] as String? ?: "release.keystore")
+                storePassword = keystoreProperties["storePassword"] as String? ?: ""
+                keyAlias = keystoreProperties["keyAlias"] as String? ?: ""
+                keyPassword = keystoreProperties["keyPassword"] as String? ?: ""
+            }
+        }
+    }
+
     buildTypes {
         debug {
             applicationIdSuffix = ".dev"
             versionNameSuffix = "-dev"
-            resValue("string", "app_name", "YAM Launcher Dev")
+            resValue("string", "app_name", "EELauncher Dev")
         }
 
         release {
+            // 如果没有签名配置，跳过签名（Debug 构建仍可正常进行）
+            val keyLoaded = keystoreProperties["signing.key.loaded"]?.toString()?.toBoolean() ?: false
+            if (keyLoaded) {
+                signingConfig = signingConfigs.getByName("release")
+            }
             isDebuggable = false
             isShrinkResources = true
             isMinifyEnabled = true
@@ -43,7 +67,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            resValue("string", "app_name", "YAM Launcher")
+            resValue("string", "app_name", "EELauncher")
         }
     }
     compileOptions {

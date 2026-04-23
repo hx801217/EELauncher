@@ -1,8 +1,8 @@
-<resources>
+﻿<resources>
     <!--Home Screen-->
     <string
         name="set_default_launcher_prompt"
-    >YAM Launcher no está configurado como tu aplicación de inicio predeterminada.</string>
+    >EELauncher no está configurado como tu aplicación de inicio predeterminada.</string>
     <string
         name="set_default_launcher_button"
     >Establecer como predeterminado</string>
@@ -82,6 +82,9 @@
     <string name="text_font">Fuente del texto</string>
     <string name="text_style">Estilo del texto</string>
     <string name="text_shadow">Sombra del texto</string>
+
+    <string name="eink_mode">Modo E-Ink</string>
+    <string name="eink_mode_summary">Optimizado para pantallas tinta electrónica: tema blanco y negro de alto contraste, animaciones desactivadas</string>
 
     <string name="operation">Operación</string>
     <string name="animation_speed">Velocidad de animación</string>
@@ -218,7 +221,7 @@
 
     <string name="about">Acerca de</string>
     <!--About Page Items-->
-    <string name="about_title">Acerca de YAM Launcher</string>
+    <string name="about_title">Acerca de EELauncher</string>
     <string name="app_icon">Icono de la aplicación</string>
     <string
         name="creditName"
@@ -232,7 +235,7 @@
     <string name="install_play">Instalar en Google Play</string>
 
     <string name="reset">Reiniciar</string>
-    <string name="restart_text">Reiniciar YAM Launcher</string>
+    <string name="restart_text">Reiniciar EELauncher</string>
     <string name="reset_text">Restablecer todos los ajustes</string>
     <string
         name="reset_confirm_text"
@@ -251,7 +254,7 @@
     >Restauración fallida :( (¿archivo corrupto?)</string>
     <string
         name="restore_wrong_app"
-    >No es una copia de seguridad de YAM Launcher</string>
+    >No es una copia de seguridad de EELauncher</string>
     <string name="restore_error">Error al leer archivo</string>
 
     <!--Logging-->
@@ -277,10 +280,10 @@
     <!--Double tap to lock-->
     <string
         name="screenlock_confirmation"
-    >Para bloquear con doble toque, habilite YAM Launcher en los ajustes de accesibilidad.</string>
+    >Para bloquear con doble toque, habilite EELauncher en los ajustes de accesibilidad.</string>
     <string
         name="accessibility_service_description"
-    >El permiso es necesario para que funcione el doble toque para bloquear la pantalla.\n\nSolo es necesario si desea usar la función de doble toque para bloquear la pantalla en YAM Launcher.</string>
+    >El permiso es necesario para que funcione el doble toque para bloquear la pantalla.\n\nSolo es necesario si desea usar la función de doble toque para bloquear la pantalla en EELauncher.</string>
 
     <string name="text_authentication_cancel">Autenticación cancelada.</string>
     <string
@@ -289,7 +292,7 @@
     <string name="text_authentication_failed">Autenticación fallida.</string>
     <string
         name="text_biometric_login"
-    >Desbloquear ajustes de YAM Launcher</string>
+    >Desbloquear ajustes de EELauncher</string>
     <string
         name="text_biometric_login_app"
     >Inicio de sesión biométrico para %1$s</string>
