@@ -40,14 +40,13 @@ jobs:
         run: |
           if [ -n "$KEYSTORE_BASE64" ]; then
             echo "$KEYSTORE_BASE64" | base64 -d > app/release.keystore
-            echo "keystore.properties" >> app/keystore.properties
-            echo "storeFile=release.keystore" >> app/keystore.properties
-            echo "storePassword=$KEYSTORE_PASSWORD" >> app/keystore.properties
-            echo "keyAlias=$KEY_ALIAS" >> app/keystore.properties
-            echo "keyPassword=$KEY_PASSWORD" >> app/keystore.properties
-            echo "signing.key.loaded=true" >> app/keystore.properties
+            echo "storeFile=release.keystore" > keystore.properties
+            echo "storePassword=$KEYSTORE_PASSWORD" >> keystore.properties
+            echo "keyAlias=$KEY_ALIAS" >> keystore.properties
+            echo "keyPassword=$KEY_PASSWORD" >> keystore.properties
+            echo "signing.key.loaded=true" >> keystore.properties
           else
-            echo "signing.key.loaded=false" > app/keystore.properties
+            echo "signing.key.loaded=false" > keystore.properties
           fi
 
       - name: Grant execute permission for gradlew
