@@ -1,8 +1,8 @@
-<resources>
+﻿<resources>
     <!--Home Screen-->
     <string
         name="set_default_launcher_prompt"
-    >YAM Launcher is niet ingesteld als uw standaard start-app.</string>
+    >EELauncher is niet ingesteld als uw standaard start-app.</string>
     <string name="set_default_launcher_button">Instellen als standaard</string>
     <string
         name="shortcut_default"
@@ -192,7 +192,7 @@
 
     <string name="about">Over</string>
     <!--About Page Items-->
-    <string name="about_title">Over YAM Launcher</string>
+    <string name="about_title">Over EELauncher</string>
     <string name="app_icon">App-pictogram</string>
     <string
         name="creditName"
@@ -206,7 +206,7 @@
     <string name="install_play">Installeren op Google Play</string>
 
     <string name="reset">Resetten</string>
-    <string name="restart_text">YAM Launcher herstarten</string>
+    <string name="restart_text">EELauncher herstarten</string>
     <string name="reset_text">Alle instellingen resetten</string>
     <string
         name="reset_confirm_text"
@@ -223,7 +223,7 @@
     <string
         name="restore_fail"
     >Herstel mislukt :( (beschadigd bestand?)</string>
-    <string name="restore_wrong_app">Geen YAM Launcher back-up</string>
+    <string name="restore_wrong_app">Geen EELauncher back-up</string>
     <string name="restore_error">Lezen van bestand mislukt</string>
 
     <!--Logging-->
@@ -247,10 +247,10 @@
     <!--Double tap to lock-->
     <string
         name="screenlock_confirmation"
-    >Schakel YAM Launcher in de toegankelijkheidsinstellingen in om te vergrendelen met dubbel tikken.</string>
+    >Schakel EELauncher in de toegankelijkheidsinstellingen in om te vergrendelen met dubbel tikken.</string>
     <string
         name="accessibility_service_description"
-    >De toestemming is vereist om dubbel tikken te laten werken voor schermvergrendeling.\n\nHet is alleen nodig als u de dubbel tikken om scherm te vergrendelen functie in YAM Launcher wilt gebruiken.</string>
+    >De toestemming is vereist om dubbel tikken te laten werken voor schermvergrendeling.\n\nHet is alleen nodig als u de dubbel tikken om scherm te vergrendelen functie in EELauncher wilt gebruiken.</string>
 
     <string
         name="text_authentication_cancel"
@@ -261,7 +261,7 @@
     <string name="text_authentication_failed">Authenticatie mislukt.</string>
     <string
         name="text_biometric_login"
-    >YAM Launcher instellingen ontgrendelen</string>
+    >EELauncher instellingen ontgrendelen</string>
     <string
         name="text_biometric_login_app"
     >Biometrische login voor %1$s</string>

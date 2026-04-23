@@ -1,8 +1,8 @@
-<resources>
+﻿<resources>
     <!--Home Screen-->
     <string
         name="set_default_launcher_prompt"
-    >YAM Launcher ist nicht als Standard-Startbildschirm festgelegt.</string>
+    >EELauncher ist nicht als Standard-Startbildschirm festgelegt.</string>
     <string name="set_default_launcher_button">Als Standard festlegen</string>
     <string
         name="shortcut_default"
@@ -202,7 +202,7 @@
 
     <string name="about">Über</string>
     <!--About Page Items-->
-    <string name="about_title">Über YAM Launcher</string>
+    <string name="about_title">Über EELauncher</string>
     <string name="app_icon">App-Symbol</string>
     <string
         name="creditName"
@@ -216,7 +216,7 @@
     <string name="install_play">Im Google Play Store installieren</string>
 
     <string name="reset">Reset</string>
-    <string name="restart_text">YAM Launcher neu starten</string>
+    <string name="restart_text">EELauncher neu starten</string>
     <string name="reset_text">Alle Einstellungen zurücksetzen</string>
     <string
         name="reset_confirm_text"
@@ -233,7 +233,7 @@
     <string
         name="restore_fail"
     >Wiederherstellung fehlgeschlagen :( (beschädigte Datei?)</string>
-    <string name="restore_wrong_app">Keine YAM-Launcher-Sicherung</string>
+    <string name="restore_wrong_app">Keine EELauncher-Sicherung</string>
     <string name="restore_error">Datei kann nicht gelesen werden</string>
 
     <!--Logging-->
@@ -261,10 +261,10 @@
     <!--Double tap to lock-->
     <string
         name="screenlock_confirmation"
-    >Um die Bildschirmsperre per Doppeltipp zu nutzen, aktiviere YAM Launcher in den Bedienungshilfen.</string>
+    >Um die Bildschirmsperre per Doppeltipp zu nutzen, aktiviere EELauncher in den Bedienungshilfen.</string>
     <string
         name="accessibility_service_description"
-    >Die Berechtigung ist erforderlich, damit das Doppeltippen zum Sperren des Bildschirms funktioniert.\n\nSie wird nur benötigt, wenn du die Funktion zum Sperren des Bildschirms durch Doppeltippen in YAM Launcher verwenden möchtest.</string>
+    >Die Berechtigung ist erforderlich, damit das Doppeltippen zum Sperren des Bildschirms funktioniert.\n\nSie wird nur benötigt, wenn du die Funktion zum Sperren des Bildschirms durch Doppeltippen in EELauncher verwenden möchtest.</string>
     <string
         name="text_authentication_cancel"
     >Authentifizierung abgebrochen.</string>
@@ -276,7 +276,7 @@
     >Authentifizierung fehlgeschlagen.</string>
     <string
         name="text_biometric_login"
-    >YAM Launcher-Einstellungen entsperren</string>
+    >EELauncher-Einstellungen entsperren</string>
     <string
         name="text_biometric_login_app"
     >Biometrische Anmeldung für %1$s</string>

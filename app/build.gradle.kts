@@ -31,7 +31,7 @@ android {
         debug {
             applicationIdSuffix = ".dev"
             versionNameSuffix = "-dev"
-            resValue("string", "app_name", "YAM Launcher Dev")
+            resValue("string", "app_name", "EELauncher Dev")
         }
 
         release {
@@ -43,7 +43,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            resValue("string", "app_name", "YAM Launcher")
+            resValue("string", "app_name", "EELauncher")
         }
     }
     compileOptions {

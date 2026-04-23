@@ -1,8 +1,8 @@
-<resources>
+﻿<resources>
     <!--Home Screen-->
     <string
         name="set_default_launcher_prompt"
-    >YAM Launcher 未设置为默认主屏幕应用。</string>
+    >EELauncher 未设置为默认主屏幕应用。</string>
     <string name="set_default_launcher_button">设为默认</string>
     <string name="shortcut_default">长按以添加应用</string>
 
@@ -170,7 +170,7 @@
 
     <string name="about">关于</string>
     <!--About Page Items-->
-    <string name="about_title">关于 YAM Launcher</string>
+    <string name="about_title">关于 EELauncher</string>
     <string name="app_icon">应用图标</string>
     <string name="creditName">由Otto创建，Thomas Boom维护</string>
     <string name="source_code">源代码</string>
@@ -182,7 +182,7 @@
     <string name="install_play">在Google Play上安装</string>
 
     <string name="reset">重置</string>
-    <string name="restart_text">重启 YAM Launcher</string>
+    <string name="restart_text">重启 EELauncher</string>
     <string name="reset_text">重置所有设置</string>
     <string
         name="reset_confirm_text"
@@ -197,7 +197,7 @@
     <string name="backup_fail">备份失败 :(</string>
     <string name="restore_success">恢复成功 :)</string>
     <string name="restore_fail">恢复失败 :( (文件损坏？)</string>
-    <string name="restore_wrong_app">这不是 YAM Launcher 的备份</string>
+    <string name="restore_wrong_app">这不是 EELauncher 的备份</string>
     <string name="restore_error">读取文件失败</string>
 
     <!--Logging-->
@@ -217,15 +217,15 @@
     <!--Double tap to lock-->
     <string
         name="screenlock_confirmation"
-    >要启用双击锁定，请在辅助功能设置中启用 YAM Launcher。</string>
+    >要启用双击锁定，请在辅助功能设置中启用 EELauncher。</string>
     <string
         name="accessibility_service_description"
-    >需要权限才能使双击锁定屏幕功能正常工作。\n\n仅当您想在 YAM Launcher 中使用双击锁定屏幕功能时才需要此权限。</string>
+    >需要权限才能使双击锁定屏幕功能正常工作。\n\n仅当您想在 EELauncher 中使用双击锁定屏幕功能时才需要此权限。</string>
 
     <string name="text_authentication_cancel">认证已取消。</string>
     <string name="text_authentication_error">认证错误：%1$s (代码 %2$d)</string>
     <string name="text_authentication_failed">认证失败。</string>
-    <string name="text_biometric_login">解锁 YAM Launcher 设置</string>
+    <string name="text_biometric_login">解锁 EELauncher 设置</string>
     <string name="text_biometric_login_app">%1$s 的生物识别登录</string>
     <string name="text_biometric_login_sub">使用您的生物识别凭据登录。</string>
 </resources>

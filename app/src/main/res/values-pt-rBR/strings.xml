@@ -1,8 +1,8 @@
-<resources>
+﻿<resources>
     <!--Home Screen-->
     <string
         name="set_default_launcher_prompt"
-    >YAM Launcher não está definido como seu app de início padrão.</string>
+    >EELauncher não está definido como seu app de início padrão.</string>
     <string name="set_default_launcher_button">Definir como padrão</string>
     <string
         name="shortcut_default"
@@ -205,7 +205,7 @@
 
     <string name="about">Sobre</string>
     <!--About Page Items-->
-    <string name="about_title">Sobre o YAM Launcher</string>
+    <string name="about_title">Sobre o EELauncher</string>
     <string name="app_icon">Ícone do app</string>
     <string name="creditName">Criado por Otto, mantido por Thomas Boom</string>
     <string name="source_code">Código-fonte</string>
@@ -217,7 +217,7 @@
     <string name="install_play">Instalar no Google Play</string>
 
     <string name="reset">Redefinir</string>
-    <string name="restart_text">Reiniciar YAM Launcher</string>
+    <string name="restart_text">Reiniciar EELauncher</string>
     <string name="reset_text">Redefinir todas as configurações</string>
     <string
         name="reset_confirm_text"
@@ -234,7 +234,7 @@
     <string
         name="restore_fail"
     >Falha na restauração :( (arquivo corrompido?)</string>
-    <string name="restore_wrong_app">Não é um backup do YAM Launcher</string>
+    <string name="restore_wrong_app">Não é um backup do EELauncher</string>
     <string name="restore_error">Falha ao ler arquivo</string>
 
     <!--Logging-->
@@ -258,10 +258,10 @@
     <!--Double tap to lock-->
     <string
         name="screenlock_confirmation"
-    >Para bloquear com toque duplo, ative o YAM Launcher nas configurações de acessibilidade.</string>
+    >Para bloquear com toque duplo, ative o EELauncher nas configurações de acessibilidade.</string>
     <string
         name="accessibility_service_description"
-    >Esta permissão é necessária para que o recurso de toque duplo funcione para bloquear a tela.\n\nEla só é necessária se você desejar usar o recurso de toque duplo para bloquear a tela no YAM Launcher.</string>
+    >Esta permissão é necessária para que o recurso de toque duplo funcione para bloquear a tela.\n\nEla só é necessária se você desejar usar o recurso de toque duplo para bloquear a tela no EELauncher.</string>
 
     <string name="text_authentication_cancel">Autenticação cancelada.</string>
     <string
@@ -270,7 +270,7 @@
     <string name="text_authentication_failed">Falha na autenticação.</string>
     <string
         name="text_biometric_login"
-    >Desbloquear configurações do YAM Launcher</string>
+    >Desbloquear configurações do EELauncher</string>
     <string name="text_biometric_login_app">Login biométrico para %1$s</string>
     <string
         name="text_biometric_login_sub"

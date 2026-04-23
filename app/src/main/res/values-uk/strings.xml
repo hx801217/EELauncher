@@ -1,8 +1,8 @@
-<resources>
+﻿<resources>
     <!--Home Screen-->
     <string
         name="set_default_launcher_prompt"
-    >YAM Launcher не встановлено як домашній додаток за замовчуванням.</string>
+    >EELauncher не встановлено як домашній додаток за замовчуванням.</string>
     <string
         name="set_default_launcher_button"
     >Встановити за замовчуванням</string>
@@ -200,7 +200,7 @@
 
     <string name="about">Про додаток</string>
     <!--About Page Items-->
-    <string name="about_title">Про YAM Launcher</string>
+    <string name="about_title">Про EELauncher</string>
     <string name="app_icon">Значок додатка</string>
     <string name="creditName">створено Отто, підтримується Thomas Boom</string>
     <string name="source_code">Вихідний код</string>
@@ -212,7 +212,7 @@
     <string name="install_play">Встановити з Google Play</string>
 
     <string name="reset">Скинути</string>
-    <string name="restart_text">Перезапустити YAM Launcher</string>
+    <string name="restart_text">Перезапустити EELauncher</string>
     <string name="reset_text">Скинути всі налаштування</string>
     <string
         name="reset_confirm_text"
@@ -231,7 +231,7 @@
     <string
         name="restore_fail"
     >Помилка відновлення :( (пошкоджений файл?)</string>
-    <string name="restore_wrong_app">Це не резервна копія YAM Launcher</string>
+    <string name="restore_wrong_app">Це не резервна копія EELauncher</string>
     <string name="restore_error">Не вдалося прочитати файл</string>
 
     <!--Logging-->
@@ -255,10 +255,10 @@
     <!--Double tap to lock-->
     <string
         name="screenlock_confirmation"
-    >Щоб блокувати подвійним натисканням, увімкніть YAM Launcher у налаштуваннях спеціальних можливостей.</string>
+    >Щоб блокувати подвійним натисканням, увімкніть EELauncher у налаштуваннях спеціальних можливостей.</string>
     <string
         name="accessibility_service_description"
-    >Дозвіл потрібен для роботи подвійного натискання для блокування екрана.\n\nПотрібно лише якщо ви хочете використовувати функцію подвійного натискання для блокування екрана в YAM Launcher.</string>
+    >Дозвіл потрібен для роботи подвійного натискання для блокування екрана.\n\nПотрібно лише якщо ви хочете використовувати функцію подвійного натискання для блокування екрана в EELauncher.</string>
 
     <string name="text_authentication_cancel">Аутентифікацію скасовано.</string>
     <string
@@ -267,7 +267,7 @@
     <string name="text_authentication_failed">Помилка аутентифікації.</string>
     <string
         name="text_biometric_login"
-    >Розблокувати налаштування YAM Launcher</string>
+    >Розблокувати налаштування EELauncher</string>
     <string name="text_biometric_login_app">Біометричний вхід для %1$s</string>
     <string
         name="text_biometric_login_sub"
