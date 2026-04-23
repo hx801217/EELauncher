@@ -32,6 +32,7 @@
         <item>Ubuntu Light</item>
         <item>Ubuntu Condensed Regular</item>
         <item>Workbench</item>
+        <item>@string/custom_font</item>
     </string-array>
 
     <string-array name="style_options">
