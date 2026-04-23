@@ -37,16 +37,19 @@
 
     <!--Action Menu Items-->
     <string name="pin">固定</string>
+    <string name="unpin">取消固定</string>
     <string name="info">信息</string>
     <string name="uninstall">卸载</string>
     <string name="rename">重命名</string>
     <string name="hide">隐藏</string>
     <string name="close">关闭</string>
     <string name="accessibility_pin">固定应用</string>
+    <string name="accessibility_unpin">取消固定应用</string>
     <string name="accessibility_info">应用信息</string>
     <string name="accessibility_uninstall">卸载应用</string>
     <string name="accessibility_rename">重命名应用</string>
     <string name="accessibility_hide">隐藏应用</string>
+    <string name="rename_error">无法进入重命名模式</string>
 
     <!--Settings Page-->
     <string name="settings_title">启动器设置</string>
@@ -69,13 +72,25 @@
     <string name="text_style">文字样式</string>
     <string name="text_shadow">文字阴影</string>
 
+    <string name="eink_mode">墨水屏模式</string>
+    <string name="eink_mode_summary">为电子墨水屏优化：高对比度黑白主题，禁用动画</string>
+
     <string name="operation">操作</string>
+    <string name="block_auto_rotation">禁止自动旋转</string>
+    <string name="block_auto_rotation_summary">防止屏幕自动旋转</string>
     <string name="animation_speed">动画速度</string>
     <string name="swipe_threshold">滑动阈值</string>
     <string name="swipe_velocity_threshold">滑动速度阈值</string>
     <string name="show_status_bar">显示状态栏</string>
+    <string name="app_drawer_darkening">应用抽屉背景变暗</string>
+    <string
+        name="settings_darkening"
+    >设置面板背景变暗</string>
+    <string name="homescreen_darkening">主屏幕背景变暗</string>
     <string name="enable_confirmation">应用确认对话框</string>
-    <string name="launch_confirmation_text">您确定要启动此应用吗？</string>
+    <string
+        name="launch_confirmation_text"
+    >您确定要启动此应用吗？</string>
 
     <string name="home_settings_title">主屏幕设置</string>
     <string name="home_settings_text">主屏幕</string>
@@ -118,12 +133,26 @@
     <string name="hidden_shortcut_title">隐藏应用</string>
     <string name="hidden_shortcuts">在快捷方式选择中显示隐藏应用</string>
 
+    <string name="notification_dots">通知圆点</string>
+    <string
+        name="notification_dots_summary"
+    >当应用有通知时在快捷方式上显示圆点</string>
+    <string name="notification_permission_required">需要权限</string>
+    <string
+        name="notification_permission_text"
+    >启用通知访问权限以显示通知圆点</string>
+
     <string name="gestures">手势</string>
     <string name="swipe_left">向左滑动</string>
     <string name="left_swipe_app">左滑应用</string>
     <string name="swipe_right">向右滑动</string>
     <string name="right_swipe_app">右滑应用</string>
     <string name="double_tap_to_lock_screen">双击锁定屏幕</string>
+    <string name="double_tap">双击</string>
+    <string name="double_tap_action">双击操作</string>
+    <string name="double_tap_action_lock_screen">锁定屏幕</string>
+    <string name="double_tap_action_app">启动应用</string>
+    <string name="double_tap_app">双击应用</string>
 
     <string name="app_settings_title">应用菜单设置</string>
     <string name="app_settings_text">应用菜单</string>
@@ -136,12 +165,14 @@
     <string name="contacts_menu">联系人菜单</string>
     <string name="permission_denied">权限被拒绝</string>
     <string name="internet_search">网络搜索按钮</string>
+
+    <string name="alphabet_index_enabled">字母索引</string>
     <string
-        name="auto_launch_disabled_reason_web_search"
-    >由于已启用网络搜索按钮而被禁用。</string>
-    <string
-        name="web_search_disabled_reason_auto_open"
-    >由于启用了自动打开应用而被禁用。</string>
+        name="alphabet_index_summary"
+    >显示字母侧边栏以快速导航</string>
+    <string name="alphabet_index_position">索引位置</string>
+    <string name="alphabet_index_left">左侧</string>
+    <string name="alphabet_index_right">右侧</string>
 
     <string name="context_menu_settings_title">上下文菜单设置</string>
     <string name="context_menu_settings_text">上下文菜单</string>
@@ -162,6 +193,12 @@
     <string name="automatically_open_keyboard">自动打开键盘</string>
     <string name="automatic_app_opening">自动应用打开</string>
     <string name="auto_launch_summary">当搜索结果只有唯一应用时自动启动</string>
+    <string
+        name="auto_launch_disabled_reason_web_search"
+    >由于已启用网络搜索按钮而被禁用。</string>
+    <string
+        name="web_search_disabled_reason_auto_open"
+    >由于启用了自动打开应用而被禁用。</string>
 
     <string name="hidden_apps_title">隐藏应用</string>
     <string name="hidden_apps_text">管理隐藏应用</string>
@@ -180,6 +217,8 @@
     <string name="install_fdroid">在F-Droid上安装</string>
     <string name="install_izzy">在IzzyOnDroid上安装</string>
     <string name="install_play">在Google Play上安装</string>
+    <string name="donate">支持开发</string>
+    <string name="ko_fi_link">https://liberapay.com/thomasboom</string>
 
     <string name="reset">重置</string>
     <string name="restart_text">重启 EELauncher</string>

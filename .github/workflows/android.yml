@@ -31,13 +31,32 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-
 
+      - name: Create Keystore
+        env:
+          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
+          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+        run: |
+          if [ -n "$KEYSTORE_BASE64" ]; then
+            echo "$KEYSTORE_BASE64" | base64 -d > app/release.keystore
+            echo "keystore.properties" >> app/keystore.properties
+            echo "storeFile=release.keystore" >> app/keystore.properties
+            echo "storePassword=$KEYSTORE_PASSWORD" >> app/keystore.properties
+            echo "keyAlias=$KEY_ALIAS" >> app/keystore.properties
+            echo "keyPassword=$KEY_PASSWORD" >> app/keystore.properties
+            echo "signing.key.loaded=true" >> app/keystore.properties
+          else
+            echo "signing.key.loaded=false" > app/keystore.properties
+          fi
+
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
       - name: Build Debug APK
         run: ./gradlew assembleDebug
 
-      - name: Build Release APK
+      - name: Build Release APK (Signed)
         run: ./gradlew assembleRelease
 
       - name: Upload Debug APK

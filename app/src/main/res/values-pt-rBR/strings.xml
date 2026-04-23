@@ -80,6 +80,9 @@
     <string name="text_style">Estilo do texto</string>
     <string name="text_shadow">Sombra do texto</string>
 
+    <string name="eink_mode">Modo E-Ink</string>
+    <string name="eink_mode_summary">Otimizado para telas e-ink: tema preto e branco de alto contraste, animações desativadas</string>
+
     <string name="operation">Funcionamento</string>
     <string name="animation_speed">Velocidade de animação</string>
     <string name="swipe_threshold">Limite de deslize</string>

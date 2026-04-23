@@ -72,6 +72,9 @@
     <string name="text_style">Text Style</string>
     <string name="text_shadow">Text Shadow</string>
 
+    <string name="eink_mode">E-Ink Mode</string>
+    <string name="eink_mode_summary">Optimize for e-ink displays: high contrast black/white theme, disable animations</string>
+
     <string name="operation">Operation</string>
     <string name="block_auto_rotation">Block Auto Rotation</string>
     <string name="block_auto_rotation_summary">Prevent the screen from rotating automatically</string>

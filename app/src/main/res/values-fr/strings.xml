@@ -81,6 +81,9 @@
     <string name="text_style">Style du texte</string>
     <string name="text_shadow">Ombre du texte</string>
 
+    <string name="eink_mode">Mode E-Ink</string>
+    <string name="eink_mode_summary">Optimisé pour les écrans e-ink : thème noir et blanc à contraste élevé, animations désactivées</string>
+
     <string name="operation">Opération</string>
     <string name="animation_speed">Vitesse d\'animation</string>
     <string name="swipe_threshold">Seuil de balayage</string>

@@ -2,6 +2,7 @@ package eu.ottop.yamlauncher.settings
 
 import android.content.Context
 import android.content.SharedPreferences
+import android.graphics.Color
 import android.util.TypedValue
 import android.view.ContextThemeWrapper
 import androidx.core.content.edit
@@ -46,6 +47,7 @@ class SharedPreferenceManager(private val context: Context) {
      * Returns material theme color or parsed hex value.
      */
     fun getBgColor(): Int {
+        if (isEinkMode()) return Color.WHITE
         val bgColor = preferences.getString("bgColor", "#00000000")
         if (bgColor == "material") {
             return getThemeColor(com.google.android.material.R.attr.colorOnPrimary)
@@ -63,6 +65,7 @@ class SharedPreferenceManager(private val context: Context) {
      * Returns material theme color or parsed hex value.
      */
     fun getTextColor(): Int {
+        if (isEinkMode()) return Color.BLACK
         val textColor = getTextString()
         if (textColor == "material") {
             return getThemeColor(com.google.android.material.R.attr.colorPrimary)
@@ -79,6 +82,7 @@ class SharedPreferenceManager(private val context: Context) {
      * Gets raw text color string (for status bar logic).
      */
     fun getTextString(): String? {
+        if (isEinkMode()) return "#FF000000"
         return preferences.getString("textColor", "#FFF3F3F3")
     }
 
@@ -103,13 +107,23 @@ class SharedPreferenceManager(private val context: Context) {
      * Gets text style (normal, bold, italic, bold-italic).
      */
     fun getTextStyle(): String? {
+        if (isEinkMode()) return "bold"
         return preferences.getString("textStyle", "normal")
     }
 
     /**
      * Checks if text shadow is enabled.
      */
-    fun isTextShadowEnabled(): Boolean = preferences.getBooleanOrDefault("textShadow", false)
+    fun isTextShadowEnabled(): Boolean {
+        if (isEinkMode()) return false
+        return preferences.getBooleanOrDefault("textShadow", false)
+    }
+
+    /**
+     * Checks if E-Ink mode is enabled.
+     * When enabled, overrides various UI settings for e-ink display optimization.
+     */
+    fun isEinkMode(): Boolean = preferences.getBooleanOrDefault("einkMode", false)
 
     /**
      * Checks if status bar is visible.
@@ -119,22 +133,32 @@ class SharedPreferenceManager(private val context: Context) {
     /**
      * Checks if app drawer darkening is enabled.
      */
-    fun isAppDrawerDarkeningEnabled(): Boolean = preferences.getBooleanOrDefault("appDrawerDarkening", true)
+    fun isAppDrawerDarkeningEnabled(): Boolean {
+        if (isEinkMode()) return false
+        return preferences.getBooleanOrDefault("appDrawerDarkening", true)
+    }
 
     /**
      * Checks if settings panel darkening is enabled.
      */
-    fun isSettingsDarkeningEnabled(): Boolean = preferences.getBooleanOrDefault("settingsDarkening", true)
+    fun isSettingsDarkeningEnabled(): Boolean {
+        if (isEinkMode()) return false
+        return preferences.getBooleanOrDefault("settingsDarkening", true)
+    }
 
     /**
      * Checks if homescreen darkening is enabled.
      */
-    fun isHomescreenDarkeningEnabled(): Boolean = preferences.getBooleanOrDefault("homescreenDarkening", false)
+    fun isHomescreenDarkeningEnabled(): Boolean {
+        if (isEinkMode()) return false
+        return preferences.getBooleanOrDefault("homescreenDarkening", false)
+    }
 
     /**
      * Gets animation speed in milliseconds.
      */
     fun getAnimationSpeed(): Long {
+        if (isEinkMode()) return 0L
         return preferences.getStringAsLong("animationSpeed", 200)
     }
 

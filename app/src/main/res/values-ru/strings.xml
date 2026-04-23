@@ -79,6 +79,9 @@
     <string name="text_style">Стиль текста</string>
     <string name="text_shadow">Тень текста</string>
 
+    <string name="eink_mode">Режим E-Ink</string>
+    <string name="eink_mode_summary">Оптимизация для электронных чернил: высококонтрастная чёрно-белая тема, анимации отключены</string>
+
     <string name="operation">Операции</string>
     <string name="animation_speed">Скорость анимации</string>
     <string name="swipe_threshold">Порог смахивания</string>

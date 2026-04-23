@@ -77,6 +77,9 @@
     <string name="text_style">Tekststijl</string>
     <string name="text_shadow">Tekstschaduw</string>
 
+    <string name="eink_mode">E-Ink modus</string>
+    <string name="eink_mode_summary">Geoptimaliseerd voor e-ink schermen: hoogcontrast zwart-wit thema, animaties uitgeschakeld</string>
+
     <string name="operation">Bewerking</string>
     <string name="animation_speed">Animatiesnelheid</string>
     <string name="swipe_threshold">Veegdrempel</string>

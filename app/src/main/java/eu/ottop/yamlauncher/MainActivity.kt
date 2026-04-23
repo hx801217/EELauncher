@@ -815,6 +815,11 @@ class MainActivity : AppCompatActivity(), SharedPreferences.OnSharedPreferenceCh
         when (key) {
             "bgColor", "homescreenDarkening" -> uiUtils.setBackground(window, applyHomescreenDarkening = true)
 
+            "einkMode" -> {
+                setPreferences()
+                setShortcuts()
+            }
+
             "textColor" -> {
                 uiUtils.setTextColors(binding.homeView)
                 uiUtils.setStatusBarColor(window)

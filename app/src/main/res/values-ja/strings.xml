@@ -76,6 +76,9 @@
     <string name="text_style">文字スタイル</string>
     <string name="text_shadow">文字の影</string>
 
+    <string name="eink_mode">E-Inkモード</string>
+    <string name="eink_mode_summary">電子インクディスプレイ向け最適化：ハイコントラスト白黒テーマ、アニメーション無効</string>
+
     <string name="operation">操作</string>
     <string name="animation_speed">アニメーション速度</string>
     <string name="swipe_threshold">スワイプのしきい値</string>

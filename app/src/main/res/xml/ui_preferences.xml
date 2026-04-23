@@ -50,6 +50,13 @@
             android:defaultValue="false"
             android:title="@string/text_shadow"
             app:key="textShadow" />
+        <SwitchPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="false"
+            android:title="@string/eink_mode"
+            android:summary="@string/eink_mode_summary"
+            app:key="einkMode" />
     </PreferenceCategory>
     <PreferenceCategory
         android:title="@string/operation"

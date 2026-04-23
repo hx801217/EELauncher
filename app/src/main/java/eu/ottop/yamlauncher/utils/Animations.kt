@@ -34,6 +34,11 @@ class Animations (context: Context) {
      * @param view The view to fade in
      */
     fun fadeViewIn(view: View) {
+        if (sharedPreferenceManager.isEinkMode()) {
+            view.alpha = 1f
+            view.visibility = View.VISIBLE
+            return
+        }
         view.fadeIn()
     }
 
@@ -43,6 +48,10 @@ class Animations (context: Context) {
      * @param view The view to fade out
      */
     fun fadeViewOut(view: View) {
+        if (sharedPreferenceManager.isEinkMode()) {
+            view.visibility = View.INVISIBLE
+            return
+        }
         view.fadeOut()
     }
 
@@ -55,6 +64,12 @@ class Animations (context: Context) {
      * @param duration Animation duration in milliseconds
      */
     fun showHome(homeView: View, appView: View, duration: Long) {
+        if (sharedPreferenceManager.isEinkMode()) {
+            appView.visibility = View.INVISIBLE
+            homeView.alpha = 1f
+            homeView.visibility = View.VISIBLE
+            return
+        }
         appView.slideOutToBottom(duration)
         homeView.fadeIn(duration)
     }
@@ -67,6 +82,14 @@ class Animations (context: Context) {
      * @param appView The app menu view to show
      */
     fun showApps(homeView: View, appView: View) {
+        if (sharedPreferenceManager.isEinkMode()) {
+            homeView.visibility = View.INVISIBLE
+            appView.alpha = 1f
+            appView.translationY = 0f
+            appView.scaleY = 1f
+            appView.visibility = View.VISIBLE
+            return
+        }
         appView.slideInFromBottom()
         homeView.fadeOut()
     }
@@ -78,6 +101,11 @@ class Animations (context: Context) {
  * @param activity The activity to animate
  */
 fun backgroundIn(activity: Activity) {
+    if (sharedPreferenceManager.isEinkMode()) {
+        activity.window.decorView.setBackgroundColor(android.graphics.Color.WHITE)
+        return
+    }
+
     val originalColor = sharedPreferenceManager.getBgColor()
 
     // Only animate darkness onto the transparent background if enabled
@@ -112,6 +140,11 @@ fun backgroundIn(activity: Activity) {
  * @param duration Animation duration in milliseconds
  */
 fun backgroundOut(activity: Activity, duration: Long) {
+    if (sharedPreferenceManager.isEinkMode()) {
+        activity.window.decorView.setBackgroundColor(android.graphics.Color.WHITE)
+        return
+    }
+
     val originalColor = sharedPreferenceManager.getBgColor()
     val bgColor = sharedPreferenceManager.getBgColor()
 

@@ -75,6 +75,9 @@
     <string name="text_font">Tekstin Fontti</string>
     <string name="text_style">Textin Tyyli</string>
 
+    <string name="eink_mode">E-Ink-tila</string>
+    <string name="eink_mode_summary">Optimoitu e-ink-näytöille: korkean kontrastin mustavalkoinen teema, animaatiot poistettu käytöstä</string>
+
     <string name="operation">Toiminta</string>
     <string name="animation_speed">Animaation Nopeus</string>
     <string name="swipe_threshold">Pyyhkäisyn Kynnysarvo</string>
