@@ -78,7 +78,10 @@
     <string name="text_shadow">Tekstschaduw</string>
 
     <string name="eink_mode">E-Ink modus</string>
-    <string name="eink_mode_summary">Geoptimaliseerd voor e-ink schermen: hoogcontrast zwart-wit thema, animaties uitgeschakeld</string>
+    <string name="eink_mode_summary">Geoptimaliseerd voor e-ink schermen: hoogcontrast thema, animaties uitgeschakeld</string>
+    <string name="eink_mode_off">Uit</string>
+    <string name="eink_mode_white">Witte achtergrond</string>
+    <string name="eink_mode_transparent">Transparante achtergrond</string>
 
     <string name="operation">Bewerking</string>
     <string name="animation_speed">Animatiesnelheid</string>

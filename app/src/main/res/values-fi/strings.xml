@@ -76,7 +76,10 @@
     <string name="text_style">Textin Tyyli</string>
 
     <string name="eink_mode">E-Ink-tila</string>
-    <string name="eink_mode_summary">Optimoitu e-ink-näytöille: korkean kontrastin mustavalkoinen teema, animaatiot poistettu käytöstä</string>
+    <string name="eink_mode_summary">Optimoitu e-ink-näytöille: korkean kontrastin teema, animaatiot poistettu käytöstä</string>
+    <string name="eink_mode_off">Pois</string>
+    <string name="eink_mode_white">Valkoinen tausta</string>
+    <string name="eink_mode_transparent">Läpinäkyvä tausta</string>
 
     <string name="operation">Toiminta</string>
     <string name="animation_speed">Animaation Nopeus</string>

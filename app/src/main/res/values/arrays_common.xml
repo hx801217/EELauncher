@@ -146,4 +146,10 @@
         <item>left</item>
         <item>right</item>
     </string-array>
+
+    <string-array name="eink_mode_values" translatable="false">
+        <item>off</item>
+        <item>white</item>
+        <item>transparent</item>
+    </string-array>
 </resources>

@@ -80,7 +80,10 @@
     <string name="text_shadow">Тень текста</string>
 
     <string name="eink_mode">Режим E-Ink</string>
-    <string name="eink_mode_summary">Оптимизация для электронных чернил: высококонтрастная чёрно-белая тема, анимации отключены</string>
+    <string name="eink_mode_summary">Оптимизация для электронных чернил: высококонтрастная тема, анимации отключены</string>
+    <string name="eink_mode_off">Выкл</string>
+    <string name="eink_mode_white">Белый фон</string>
+    <string name="eink_mode_transparent">Прозрачный фон</string>
 
     <string name="operation">Операции</string>
     <string name="animation_speed">Скорость анимации</string>

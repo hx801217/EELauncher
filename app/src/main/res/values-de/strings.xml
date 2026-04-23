@@ -80,7 +80,10 @@
     <string name="text_style">Stil</string>
 
     <string name="eink_mode">E-Ink-Modus</string>
-    <string name="eink_mode_summary">Optimiert für E-Ink-Displays: hochkontrastiges Schwarz/Weiß-Design, Animationen deaktiviert</string>
+    <string name="eink_mode_summary">Optimiert für E-Ink-Displays: hochkontrastiges Design, Animationen deaktiviert</string>
+    <string name="eink_mode_off">Aus</string>
+    <string name="eink_mode_white">Weißer Hintergrund</string>
+    <string name="eink_mode_transparent">Transparenter Hintergrund</string>
 
     <string name="operation">Bedienung</string>
     <string name="animation_speed">Animationsgeschwindigkeit</string>

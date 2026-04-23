@@ -101,4 +101,10 @@
         <item>@string/alphabet_index_left</item>
         <item>@string/alphabet_index_right</item>
     </string-array>
+
+    <string-array name="eink_mode_options">
+        <item>@string/eink_mode_off</item>
+        <item>@string/eink_mode_white</item>
+        <item>@string/eink_mode_transparent</item>
+    </string-array>
 </resources>

@@ -83,7 +83,10 @@
     <string name="text_shadow">Ombra del testo</string>
 
     <string name="eink_mode">Modalità E-Ink</string>
-    <string name="eink_mode_summary">Ottimizzato per schermi e-ink: tema bianco e nero ad alto contrasto, animazioni disattivate</string>
+    <string name="eink_mode_summary">Ottimizzato per schermi e-ink: tema ad alto contrasto, animazioni disattivate</string>
+    <string name="eink_mode_off">Disattivato</string>
+    <string name="eink_mode_white">Sfondo bianco</string>
+    <string name="eink_mode_transparent">Sfondo trasparente</string>
     <string name="operation">Operazioni</string>
     <string name="animation_speed">Velocità animazione</string>
     <string name="swipe_threshold">Soglia swipe</string>

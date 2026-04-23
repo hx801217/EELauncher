@@ -102,7 +102,9 @@ class Animations (context: Context) {
  */
 fun backgroundIn(activity: Activity) {
     if (sharedPreferenceManager.isEinkMode()) {
-        activity.window.decorView.setBackgroundColor(android.graphics.Color.WHITE)
+        if (sharedPreferenceManager.getEinkMode() == "white") {
+            activity.window.decorView.setBackgroundColor(android.graphics.Color.WHITE)
+        }
         return
     }
 
@@ -141,7 +143,9 @@ fun backgroundIn(activity: Activity) {
  */
 fun backgroundOut(activity: Activity, duration: Long) {
     if (sharedPreferenceManager.isEinkMode()) {
-        activity.window.decorView.setBackgroundColor(android.graphics.Color.WHITE)
+        if (sharedPreferenceManager.getEinkMode() == "white") {
+            activity.window.decorView.setBackgroundColor(android.graphics.Color.WHITE)
+        }
         return
     }
 

@@ -81,7 +81,10 @@
     <string name="text_shadow">Sombra do texto</string>
 
     <string name="eink_mode">Modo E-Ink</string>
-    <string name="eink_mode_summary">Otimizado para telas e-ink: tema preto e branco de alto contraste, animações desativadas</string>
+    <string name="eink_mode_summary">Otimizado para telas e-ink: tema de alto contraste, animações desativadas</string>
+    <string name="eink_mode_off">Desativado</string>
+    <string name="eink_mode_white">Fundo branco</string>
+    <string name="eink_mode_transparent">Fundo transparente</string>
 
     <string name="operation">Funcionamento</string>
     <string name="animation_speed">Velocidade de animação</string>

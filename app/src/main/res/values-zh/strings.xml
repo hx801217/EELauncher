@@ -73,7 +73,10 @@
     <string name="text_shadow">文字阴影</string>
 
     <string name="eink_mode">墨水屏模式</string>
-    <string name="eink_mode_summary">为电子墨水屏优化：高对比度黑白主题，禁用动画</string>
+    <string name="eink_mode_summary">为电子墨水屏优化：高对比度主题，禁用动画</string>
+    <string name="eink_mode_off">关闭</string>
+    <string name="eink_mode_white">白底黑字</string>
+    <string name="eink_mode_transparent">透明底黑字</string>
 
     <string name="operation">操作</string>
     <string name="block_auto_rotation">禁止自动旋转</string>

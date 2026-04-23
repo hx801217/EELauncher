@@ -47,7 +47,13 @@ class SharedPreferenceManager(private val context: Context) {
      * Returns material theme color or parsed hex value.
      */
     fun getBgColor(): Int {
-        if (isEinkMode()) return Color.WHITE
+        if (isEinkMode()) {
+            return when (getEinkMode()) {
+                "white" -> Color.WHITE
+                "transparent" -> Color.parseColor("#00000000")
+                else -> Color.WHITE
+            }
+        }
         val bgColor = preferences.getString("bgColor", "#00000000")
         if (bgColor == "material") {
             return getThemeColor(com.google.android.material.R.attr.colorOnPrimary)
@@ -120,10 +126,17 @@ class SharedPreferenceManager(private val context: Context) {
     }
 
     /**
-     * Checks if E-Ink mode is enabled.
-     * When enabled, overrides various UI settings for e-ink display optimization.
+     * Gets E-Ink mode preference.
+     * Values: "off" (disabled), "white" (white background + black text), "transparent" (transparent background + black text)
      */
-    fun isEinkMode(): Boolean = preferences.getBooleanOrDefault("einkMode", false)
+    fun getEinkMode(): String {
+        return preferences.getString("einkMode", "off") ?: "off"
+    }
+
+    /**
+     * Checks if E-Ink mode is enabled (any mode other than "off").
+     */
+    fun isEinkMode(): Boolean = getEinkMode() != "off"
 
     /**
      * Checks if status bar is visible.
