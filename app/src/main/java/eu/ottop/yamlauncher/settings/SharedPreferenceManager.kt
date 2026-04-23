@@ -130,7 +130,7 @@ class SharedPreferenceManager(private val context: Context) {
      * Gets text style (normal, bold, italic, bold-italic).
      */
     fun getTextStyle(): String? {
-        if (isEinkMode()) return "bold"
+        if (isEinkMode()) return preferences.getString("textStyle", "normal")
         return preferences.getString("textStyle", "normal")
     }
 
